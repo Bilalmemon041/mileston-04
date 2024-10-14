@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editable Resume</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+        <h1>Editable Dynamic Resume</h1>
+        <form id="resume-form">
+           <fieldset>
+            <legend>Personal Information</legend>
+            <label for="name">Nmae :</label>
+            <input type="text" id="name" placeholder="Enter Your Name" required> 
+            
+
+            <label for="email">Email :</label>
+            <input type="email" id="email" placeholder="Enter Your Mail" required>
+
+            <label for="phone">Phone :</label>
+            <input type="number" id="phone" placeholder="Enter Your Phone" required>
+           </fieldset>
+
+           <fieldset>
+            <legend>Education</legend>
+            <label for="education">Education :</label>
+            <textarea name="education" rows="4" id="education"></textarea required>
+           </fieldset>
+
+           <fieldset>
+            <legend>Expiriance</legend>
+            <label for="experience">Experience :</label>
+            <textarea name="experience" rows="4" id="experience"></textarea required>
+           </fieldset>
+           <fieldset>
+            <legend>Skill</legend>
+            <label for="skill">Skill :</label>
+            <textarea name="skill" rows="4" id="skill"></textarea required>
+           </fieldset>
+
+           <button type="submit">Generate</button>
+
+           <br>
+           <div id="display" contenteditable="true">
+
+           </div>
+
+
+        </form>
+
+        <script src="./script.js"></script>
+    
+</body>
+</html>
